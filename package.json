@@ -1,0 +1,24 @@
+{
+  "name": "timeline",
+  "version": "1.0.0",
+  "description": "desc",
+  "author": "madeinmoon",
+  "license": "MIT",
+  "dependencies": {
+    "babel-preset-react": "^6.1.18",
+    "babelify": "^7.2.0",
+    "react": "^0.14.3",
+    "react-router-component": ">=0.27",
+    "react-router-component-transition": "^0.2.0",
+    "react-addons-css-transition-group": "^0.14.1",
+    "react-dom": "^0.14.2",
+    "reactify": "^1.1.1",
+    "uglify-js": "^2.6.1"
+  },
+  "scripts": {
+    "build-dev": "browserify -t [ babelify --presets [react] ] src/main.js -o client/js/bundle.js",
+    "build-prod": "browserify -t [ babelify --presets [react] ] src/main.js | uglifyjs > client/js/bundle.min.js",
+    "watch": "watchify -t [ babelify --presets [react] ] src/main.js -o client/js/bundle.js",
+    "clean-js": "rm public/*.js"
+  }
+}
