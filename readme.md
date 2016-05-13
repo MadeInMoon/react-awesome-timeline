@@ -22,7 +22,7 @@
 - customizable style
 
 
-## TODO
+#### TODO
 
 - remove jquery
 - create sub-components
