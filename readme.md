@@ -1,5 +1,11 @@
 # A beautiful react horizontal timeline
 
+![screenshot](https://raw.githubusercontent.com/MadeInMoon/react-awesome-timeline/master/client/img/screenshot.jpg)
+
+----
+**Support**
+![support](https://raw.githubusercontent.com/MadeInMoon/react-awesome-timeline/master/client/img/support.jpg)
+
 ----
 ## About
 

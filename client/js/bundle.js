@@ -19394,7 +19394,7 @@ module.exports = React.createClass({
                         React.createElement(
                             'h2',
                             null,
-                            'Horizontal Timeline'
+                            'React Timeline'
                         ),
                         React.createElement(
                             'em',
