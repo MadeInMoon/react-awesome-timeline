@@ -6,12 +6,90 @@ var context;
 
 
 
-
-
 module.exports = React.createClass({
 
   getInitialState: function(){
-    return{}
+    return{
+        items: [
+            {
+                myClass:    "selected",
+                dataDate:   "16/01/2014",
+                title:      "React Timeline",
+                subtitle:   "JJanuary 16th, 2014",
+                desc:       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus."
+            },
+            {
+                myClass:    "",
+                dataDate:   "28/02/2014",
+                title:      "Event title here",
+                subtitle:   "February 28th, 2014",
+                desc:       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus."
+            },
+            {
+                myClass:    "",
+                dataDate:   "20/04/2014",
+                title:      "Event title here",
+                subtitle:   "March 20th, 2014",
+                desc:       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus."
+            },
+            {
+                myClass:    "",
+                dataDate:   "20/05/2014",
+                title:      "Event title here",
+                subtitle:   "May 20th, 2014",
+                desc:       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus."
+            },
+            {
+                myClass:    "",
+                dataDate:   "09/07/2014",
+                title:      "Event title here",
+                subtitle:   "July 9th, 2014",
+                desc:       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus."
+            },
+            {
+                myClass:    "",
+                dataDate:   "30/08/2014",
+                title:      "Event title here",
+                subtitle:   "August 30th, 2014",
+                desc:       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus."
+            },
+            {
+                myClass:    "",
+                dataDate:   "15/09/2014",
+                title:      "Event title here",
+                subtitle:   "September 15th, 2014",
+                desc:       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus."
+            },
+            {
+                myClass:    "",
+                dataDate:   "01/11/2014",
+                title:      "Event title here",
+                subtitle:   "November 1st, 2014",
+                desc:       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus."
+            },
+            {
+                myClass:    "",
+                dataDate:   "10/12/2014",
+                title:      "Event title here",
+                subtitle:   "December 10th, 2014",
+                desc:       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus."
+            },
+            {
+                myClass:    "",
+                dataDate:   "19/01/2015",
+                title:      "Event title here",
+                subtitle:   "January 19th, 2015",
+                desc:       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus."
+            },
+            {
+                myClass:    "",
+                dataDate:   "03/03/2015",
+                title:      "Event title here",
+                subtitle:   "March 3rd, 2015",
+                desc:       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus."
+            },
+        ],
+    }
   },
 
   componentDidMount: function() {
@@ -321,93 +399,20 @@ module.exports = React.createClass({
           
             <div className="events-content">
                 <ol>
-                    <li className="selected" data-date="16/01/2014">
-                        <h2>React Timeline</h2>
-                        <em>January 16th, 2014</em>
-                        <p>	
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-                        </p>
-                    </li>
-
-                    <li data-date="28/02/2014">
-                        <h2>Event title here</h2>
-                        <em>February 28th, 2014</em>
-                        <p>	
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-                        </p>
-                    </li>
-
-                    <li data-date="20/04/2014">
-                        <h2>Event title here</h2>
-                        <em>March 20th, 2014</em>
-                        <p>	
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-                        </p>
-                    </li>
-
-                    <li data-date="20/05/2014">
-                        <h2>Event title here</h2>
-                        <em>May 20th, 2014</em>
-                        <p>	
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-                        </p>
-                    </li>
-
-                    <li data-date="09/07/2014">
-                        <h2>Event title here</h2>
-                        <em>July 9th, 2014</em>
-                        <p>	
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-                        </p>
-                    </li>
-
-                    <li data-date="30/08/2014">
-                        <h2>Event title here</h2>
-                        <em>August 30th, 2014</em>
-                        <p>	
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-                        </p>
-                    </li>
-
-                    <li data-date="15/09/2014">
-                        <h2>Event title here</h2>
-                        <em>September 15th, 2014</em>
-                        <p>	
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-                        </p>
-                    </li>
-
-                    <li data-date="01/11/2014">
-                        <h2>Event title here</h2>
-                        <em>November 1st, 2014</em>
-                        <p>	
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-                        </p>
-                    </li>
-
-                    <li data-date="10/12/2014">
-                        <h2>Event title here</h2>
-                        <em>December 10th, 2014</em>
-                        <p>	
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-                        </p>
-                    </li>
-
-                    <li data-date="19/01/2015">
-                        <h2>Event title here</h2>
-                        <em>January 19th, 2015</em>
-                        <p>	
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-                        </p>
-                    </li>
-
-                    <li data-date="03/03/2015">
-                        <h2>Event title here</h2>
-                        <em>March 3rd, 2015</em>
-                        <p>	
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-                        </p>
-                    </li>
+                    
+                    
+                    {this.state.items.map(function(item, i){   
+                        
+                        return(
+                            <li key={i} className={item.myClass} data-date={item.dataDate}>
+                                <h2>{item.title}</h2>
+                                <em>{item.subtitle}</em>
+                                <p> {item.desc}</p>
+                            </li>
+                        )
+                        
+                    }.bind(this))}
+               
                 </ol>
             </div>
           

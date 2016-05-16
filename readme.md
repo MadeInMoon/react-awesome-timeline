@@ -29,7 +29,7 @@
 - a lot more.. 
 
 
-#### Inspired By
+#### Designed By
 
 see [horizontal-timeline](https://codyhouse.co/gem/horizontal-timeline/)
 

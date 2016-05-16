@@ -18971,11 +18971,79 @@ var eventsMinDistance = 60;
 var context;
 
 module.exports = React.createClass({
-    displayName: 'exports',
+    displayName: "exports",
 
 
     getInitialState: function () {
-        return {};
+        return {
+            items: [{
+                myClass: "selected",
+                dataDate: "16/01/2014",
+                title: "React Timeline",
+                subtitle: "JJanuary 16th, 2014",
+                desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus."
+            }, {
+                myClass: "",
+                dataDate: "28/02/2014",
+                title: "Event title here",
+                subtitle: "February 28th, 2014",
+                desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus."
+            }, {
+                myClass: "",
+                dataDate: "20/04/2014",
+                title: "Event title here",
+                subtitle: "March 20th, 2014",
+                desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus."
+            }, {
+                myClass: "",
+                dataDate: "20/05/2014",
+                title: "Event title here",
+                subtitle: "May 20th, 2014",
+                desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus."
+            }, {
+                myClass: "",
+                dataDate: "09/07/2014",
+                title: "Event title here",
+                subtitle: "July 9th, 2014",
+                desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus."
+            }, {
+                myClass: "",
+                dataDate: "30/08/2014",
+                title: "Event title here",
+                subtitle: "August 30th, 2014",
+                desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus."
+            }, {
+                myClass: "",
+                dataDate: "15/09/2014",
+                title: "Event title here",
+                subtitle: "September 15th, 2014",
+                desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus."
+            }, {
+                myClass: "",
+                dataDate: "01/11/2014",
+                title: "Event title here",
+                subtitle: "November 1st, 2014",
+                desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus."
+            }, {
+                myClass: "",
+                dataDate: "10/12/2014",
+                title: "Event title here",
+                subtitle: "December 10th, 2014",
+                desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus."
+            }, {
+                myClass: "",
+                dataDate: "19/01/2015",
+                title: "Event title here",
+                subtitle: "January 19th, 2015",
+                desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus."
+            }, {
+                myClass: "",
+                dataDate: "03/03/2015",
+                title: "Event title here",
+                subtitle: "March 3rd, 2015",
+                desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus."
+            }]
+        };
     },
 
     componentDidMount: function () {
@@ -19242,361 +19310,175 @@ module.exports = React.createClass({
 
     render: function () {
         return React.createElement(
-            'section',
-            { className: 'cd-horizontal-timeline' },
+            "section",
+            { className: "cd-horizontal-timeline" },
             React.createElement(
-                'div',
-                { className: 'timeline' },
+                "div",
+                { className: "timeline" },
                 React.createElement(
-                    'div',
-                    { className: 'events-wrapper' },
+                    "div",
+                    { className: "events-wrapper" },
                     React.createElement(
-                        'div',
-                        { className: 'events' },
+                        "div",
+                        { className: "events" },
                         React.createElement(
-                            'ol',
+                            "ol",
                             null,
                             React.createElement(
-                                'li',
+                                "li",
                                 null,
                                 React.createElement(
-                                    'a',
-                                    { href: '#0', 'data-date': '16/01/2014', className: 'selected' },
-                                    '16 Jan'
+                                    "a",
+                                    { href: "#0", "data-date": "16/01/2014", className: "selected" },
+                                    "16 Jan"
                                 )
                             ),
                             React.createElement(
-                                'li',
+                                "li",
                                 null,
                                 React.createElement(
-                                    'a',
-                                    { href: '#0', 'data-date': '28/02/2014' },
-                                    '28 Feb'
+                                    "a",
+                                    { href: "#0", "data-date": "28/02/2014" },
+                                    "28 Feb"
                                 )
                             ),
                             React.createElement(
-                                'li',
+                                "li",
                                 null,
                                 React.createElement(
-                                    'a',
-                                    { href: '#0', 'data-date': '20/04/2014' },
-                                    '20 Mar'
+                                    "a",
+                                    { href: "#0", "data-date": "20/04/2014" },
+                                    "20 Mar"
                                 )
                             ),
                             React.createElement(
-                                'li',
+                                "li",
                                 null,
                                 React.createElement(
-                                    'a',
-                                    { href: '#0', 'data-date': '20/05/2014' },
-                                    '20 May'
+                                    "a",
+                                    { href: "#0", "data-date": "20/05/2014" },
+                                    "20 May"
                                 )
                             ),
                             React.createElement(
-                                'li',
+                                "li",
                                 null,
                                 React.createElement(
-                                    'a',
-                                    { href: '#0', 'data-date': '09/07/2014' },
-                                    '09 Jul'
+                                    "a",
+                                    { href: "#0", "data-date": "09/07/2014" },
+                                    "09 Jul"
                                 )
                             ),
                             React.createElement(
-                                'li',
+                                "li",
                                 null,
                                 React.createElement(
-                                    'a',
-                                    { href: '#0', 'data-date': '30/08/2014' },
-                                    '30 Aug'
+                                    "a",
+                                    { href: "#0", "data-date": "30/08/2014" },
+                                    "30 Aug"
                                 )
                             ),
                             React.createElement(
-                                'li',
+                                "li",
                                 null,
                                 React.createElement(
-                                    'a',
-                                    { href: '#0', 'data-date': '15/09/2014' },
-                                    '15 Sep'
+                                    "a",
+                                    { href: "#0", "data-date": "15/09/2014" },
+                                    "15 Sep"
                                 )
                             ),
                             React.createElement(
-                                'li',
+                                "li",
                                 null,
                                 React.createElement(
-                                    'a',
-                                    { href: '#0', 'data-date': '01/11/2014' },
-                                    '01 Nov'
+                                    "a",
+                                    { href: "#0", "data-date": "01/11/2014" },
+                                    "01 Nov"
                                 )
                             ),
                             React.createElement(
-                                'li',
+                                "li",
                                 null,
                                 React.createElement(
-                                    'a',
-                                    { href: '#0', 'data-date': '10/12/2014' },
-                                    '10 Dec'
+                                    "a",
+                                    { href: "#0", "data-date": "10/12/2014" },
+                                    "10 Dec"
                                 )
                             ),
                             React.createElement(
-                                'li',
+                                "li",
                                 null,
                                 React.createElement(
-                                    'a',
-                                    { href: '#0', 'data-date': '19/01/2015' },
-                                    '29 Jan'
+                                    "a",
+                                    { href: "#0", "data-date": "19/01/2015" },
+                                    "29 Jan"
                                 )
                             ),
                             React.createElement(
-                                'li',
+                                "li",
                                 null,
                                 React.createElement(
-                                    'a',
-                                    { href: '#0', 'data-date': '03/03/2015' },
-                                    '3 Mar'
+                                    "a",
+                                    { href: "#0", "data-date": "03/03/2015" },
+                                    "3 Mar"
                                 )
                             )
                         ),
-                        React.createElement('span', { className: 'filling-line', 'aria-hidden': 'true' })
+                        React.createElement("span", { className: "filling-line", "aria-hidden": "true" })
                     )
                 ),
                 React.createElement(
-                    'ul',
-                    { className: 'cd-timeline-navigation' },
+                    "ul",
+                    { className: "cd-timeline-navigation" },
                     React.createElement(
-                        'li',
+                        "li",
                         null,
                         React.createElement(
-                            'a',
-                            { href: '#0', className: 'prev inactive' },
-                            'Prev'
+                            "a",
+                            { href: "#0", className: "prev inactive" },
+                            "Prev"
                         )
                     ),
                     React.createElement(
-                        'li',
+                        "li",
                         null,
                         React.createElement(
-                            'a',
-                            { href: '#0', className: 'next' },
-                            'Next'
+                            "a",
+                            { href: "#0", className: "next" },
+                            "Next"
                         )
                     )
                 )
             ),
             React.createElement(
-                'div',
-                { className: 'events-content' },
+                "div",
+                { className: "events-content" },
                 React.createElement(
-                    'ol',
+                    "ol",
                     null,
-                    React.createElement(
-                        'li',
-                        { className: 'selected', 'data-date': '16/01/2014' },
-                        React.createElement(
-                            'h2',
-                            null,
-                            'React Timeline'
-                        ),
-                        React.createElement(
-                            'em',
-                            null,
-                            'January 16th, 2014'
-                        ),
-                        React.createElement(
-                            'p',
-                            null,
-                            'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.'
-                        )
-                    ),
-                    React.createElement(
-                        'li',
-                        { 'data-date': '28/02/2014' },
-                        React.createElement(
-                            'h2',
-                            null,
-                            'Event title here'
-                        ),
-                        React.createElement(
-                            'em',
-                            null,
-                            'February 28th, 2014'
-                        ),
-                        React.createElement(
-                            'p',
-                            null,
-                            'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.'
-                        )
-                    ),
-                    React.createElement(
-                        'li',
-                        { 'data-date': '20/04/2014' },
-                        React.createElement(
-                            'h2',
-                            null,
-                            'Event title here'
-                        ),
-                        React.createElement(
-                            'em',
-                            null,
-                            'March 20th, 2014'
-                        ),
-                        React.createElement(
-                            'p',
-                            null,
-                            'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.'
-                        )
-                    ),
-                    React.createElement(
-                        'li',
-                        { 'data-date': '20/05/2014' },
-                        React.createElement(
-                            'h2',
-                            null,
-                            'Event title here'
-                        ),
-                        React.createElement(
-                            'em',
-                            null,
-                            'May 20th, 2014'
-                        ),
-                        React.createElement(
-                            'p',
-                            null,
-                            'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.'
-                        )
-                    ),
-                    React.createElement(
-                        'li',
-                        { 'data-date': '09/07/2014' },
-                        React.createElement(
-                            'h2',
-                            null,
-                            'Event title here'
-                        ),
-                        React.createElement(
-                            'em',
-                            null,
-                            'July 9th, 2014'
-                        ),
-                        React.createElement(
-                            'p',
-                            null,
-                            'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.'
-                        )
-                    ),
-                    React.createElement(
-                        'li',
-                        { 'data-date': '30/08/2014' },
-                        React.createElement(
-                            'h2',
-                            null,
-                            'Event title here'
-                        ),
-                        React.createElement(
-                            'em',
-                            null,
-                            'August 30th, 2014'
-                        ),
-                        React.createElement(
-                            'p',
-                            null,
-                            'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.'
-                        )
-                    ),
-                    React.createElement(
-                        'li',
-                        { 'data-date': '15/09/2014' },
-                        React.createElement(
-                            'h2',
-                            null,
-                            'Event title here'
-                        ),
-                        React.createElement(
-                            'em',
-                            null,
-                            'September 15th, 2014'
-                        ),
-                        React.createElement(
-                            'p',
-                            null,
-                            'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.'
-                        )
-                    ),
-                    React.createElement(
-                        'li',
-                        { 'data-date': '01/11/2014' },
-                        React.createElement(
-                            'h2',
-                            null,
-                            'Event title here'
-                        ),
-                        React.createElement(
-                            'em',
-                            null,
-                            'November 1st, 2014'
-                        ),
-                        React.createElement(
-                            'p',
-                            null,
-                            'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.'
-                        )
-                    ),
-                    React.createElement(
-                        'li',
-                        { 'data-date': '10/12/2014' },
-                        React.createElement(
-                            'h2',
-                            null,
-                            'Event title here'
-                        ),
-                        React.createElement(
-                            'em',
-                            null,
-                            'December 10th, 2014'
-                        ),
-                        React.createElement(
-                            'p',
-                            null,
-                            'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.'
-                        )
-                    ),
-                    React.createElement(
-                        'li',
-                        { 'data-date': '19/01/2015' },
-                        React.createElement(
-                            'h2',
-                            null,
-                            'Event title here'
-                        ),
-                        React.createElement(
-                            'em',
-                            null,
-                            'January 19th, 2015'
-                        ),
-                        React.createElement(
-                            'p',
-                            null,
-                            'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.'
-                        )
-                    ),
-                    React.createElement(
-                        'li',
-                        { 'data-date': '03/03/2015' },
-                        React.createElement(
-                            'h2',
-                            null,
-                            'Event title here'
-                        ),
-                        React.createElement(
-                            'em',
-                            null,
-                            'March 3rd, 2015'
-                        ),
-                        React.createElement(
-                            'p',
-                            null,
-                            'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.'
-                        )
-                    )
+                    this.state.items.map(function (item, i) {
+
+                        return React.createElement(
+                            "li",
+                            { key: i, className: item.myClass, "data-date": item.dataDate },
+                            React.createElement(
+                                "h2",
+                                null,
+                                item.title
+                            ),
+                            React.createElement(
+                                "em",
+                                null,
+                                item.subtitle
+                            ),
+                            React.createElement(
+                                "p",
+                                null,
+                                " ",
+                                item.desc
+                            )
+                        );
+                    }.bind(this))
                 )
             )
         );
