@@ -368,7 +368,29 @@ module.exports = React.createClass({
         
         <section className="cd-horizontal-timeline">
           
+
+
           
+            <div className="events-content">
+                <ol>
+                    
+                    
+                    {this.state.items.map(function(item, i){   
+                        
+                        return(
+                            <li key={i} className={item.myClass} data-date={item.dataDate}>
+                                <h2>{item.title}</h2>
+                                <em>{item.subtitle}</em>
+                                <p> {item.desc}</p>
+                            </li>
+                        )
+                        
+                    }.bind(this))}
+               
+                </ol>
+            </div>
+          
+                    
             <div className="timeline">
                 <div className="events-wrapper">
                     <div className="events">
@@ -395,27 +417,6 @@ module.exports = React.createClass({
                     <li><a href="#0" className="next">Next</a></li>
                 </ul>
             </div>
-
-          
-            <div className="events-content">
-                <ol>
-                    
-                    
-                    {this.state.items.map(function(item, i){   
-                        
-                        return(
-                            <li key={i} className={item.myClass} data-date={item.dataDate}>
-                                <h2>{item.title}</h2>
-                                <em>{item.subtitle}</em>
-                                <p> {item.desc}</p>
-                            </li>
-                        )
-                        
-                    }.bind(this))}
-               
-                </ol>
-            </div>
-          
           
         </section>
 
